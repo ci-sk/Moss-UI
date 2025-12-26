@@ -1,0 +1,24 @@
+{
+  "name": "@moss-ui/components",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "_main": "./dist/index.umd.js",
+  "_module": "./dist/index.es.js",
+  "_types": "./dist/types/index.d.ts",
+  "types": "index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

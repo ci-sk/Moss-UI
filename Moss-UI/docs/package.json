@@ -1,0 +1,19 @@
+{
+  "name": "@moss-ui/docs",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "dependencies": {
+    "@moss-ui/components": "workspace:*",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.26"
+  }
+}

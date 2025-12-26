@@ -1,7 +1,26 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@moss-ui/components": ["packages/components/index.ts"]
+    },
+    // 1. 设置目标版本为较新的 ES 版本
+    "target": "ESNext",
+    // 2. 关键：设置模块系统为 ESNext，这样才允许使用 import.meta
+    "module": "ESNext",
+    // 3. 配合模块系统使用 Bundler 或 Node 的解析策略
+    "moduleResolution": "bundler",
+    // 其他必要配置
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "strict": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
 }
