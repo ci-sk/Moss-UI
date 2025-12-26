@@ -1,4 +1,16 @@
 {
+  "compilerOptions": {
+    "extends": "../tsconfig.json",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "strict": true,
+    "skipLibCheck": true,
+    "isolatedModules": true
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

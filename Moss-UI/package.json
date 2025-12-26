@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "play": "pnpm --filter play dev",
+    "play": "npm run dev --prefix play",
     "docs:dev": "pnpm --filter @moss-ui/docs dev",
     "docs:build": "pnpm --filter @moss-ui/docs build",
     "docs:preview": "pnpm -C docs vitepress preview",

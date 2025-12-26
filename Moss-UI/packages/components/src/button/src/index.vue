@@ -1,6 +1,12 @@
-<template>
-  <button style="color: red">测试按钮</button>
-</template>
-<script lang="ts" setup>
-defineOptions({ name: 'VeButton' })
+<script setup>
+  defineOptions({ name: 'MoButton' })
 </script>
+<template>
+  <button class="mo-button">测试按钮</button>
+</template>
+
+<style scoped>
+.mo-button {
+  color: red;
+}
+</style>
